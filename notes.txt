@@ -1,0 +1,96 @@
+notes
+git clone https://github.com/gz-adrian/youtube-timecodes.git
+
+go to folder
+cd youtube-timecodes/
+
+! Important
+git remote add origin https://github.com/UserName/RepoName.git
+git pull origin main
+git push -u origin main
+
+
+    git push --set-upstream origin answer
+
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git push --set-upstream origin answer
+To https://github.com/gz-adrian/youtube-timecodes.git
+ ! [rejected]        answer -> answer (non-fast-forward)
+error: failed to push some refs to 'https://github.com/gz-adrian/youtube-timecodes.git'
+hint: Updates were rejected because the tip of your current branch 
+is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.   
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do 
+so with:
+
+    git branch --set-upstream-to=<remote>/<branch> answer
+
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git pull https://github.com/gz-adrian/youtube-timecodes.git answer
+From https://github.com/gz-adrian/youtube-timecodes
+ * branch            answer     -> FETCH_HEAD
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer|MERGING)
+$ git add .
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer|MERGING)
+$ git commit -m 'test 05'
+[answer 5013ca5] test 05
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git push
+fatal: The current branch answer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin answer
+
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git push --set-upstream origin answer
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 24 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (13/13), 1.19 KiB | 1.19 MiB/s, done.
+Total 13 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/gz-adrian/youtube-timecodes.git
+   7780b15..5013ca5  answer -> answer
+branch 'answer' set up to track 'origin/answer'.
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git status
+On branch answer
+Your branch is up to date with 'origin/answer'.
+
+nothing to commit, working tree clean
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (answer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (main)
+$ git branch answer
+fatal: a branch named 'answer' already exists
+
+tron@DESKTOP-21RHJ6S MINGW64 ~/GoogleDrive/Udemy/github/Fork_Sub/Fork_gitH_rev3/youtube-timecodes (main)
+$ git checkout answer
+Switched to branch 'answer'
+Your branch is up to date with 'origin/answer'.
