@@ -1,4 +1,12 @@
 notes
+
+$ git config --global user.name "Leon Noel" 
+$ git config --global user.email "leon@leonnoel.com"
+
+git config user.name
+git config user.email
+------
+
 git clone https://github.com/gz-adrian/youtube-timecodes.git
 
 go to folder
