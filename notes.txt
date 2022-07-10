@@ -5,6 +5,7 @@ $ git config --global user.email "leon@leonnoel.com"
 
 git config user.name
 git config user.email
+https://slides.com/leonnoel/100devs2-intro-to-git-and-github#/59
 ------
 
 git clone https://github.com/gz-adrian/youtube-timecodes.git
